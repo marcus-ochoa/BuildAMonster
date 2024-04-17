@@ -50,6 +50,7 @@ class Monster extends Phaser.Scene {
 
 
         my.sprite.antennaLeft = this.add.sprite(this.bodyX - 20, this.bodyY - 100, "monsterParts", "detail_red_antenna_large.png");
+        my.sprite.antennaLeft.setFlipX(true);
         my.sprite.antennaRight = this.add.sprite(this.bodyX + 20, this.bodyY - 100, "monsterParts", "detail_blue_antenna_large.png");
 
         this.input.keyboard.on("keydown-S", this.smile, this);
